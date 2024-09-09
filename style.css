@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto Mono", system-ui;
+    background-color: rgba(250, 235, 215, 0.403);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+   
+    position: relative;
+}
+.backgroound{
+    background-image:url('background-pattern-desktop.svg') ;
+height: 30%;
+width: 100%;
+background-repeat: no -repeat;
+    background-size: cover;
+}
+.FQA{
+    top: 15%;
+    position: absolute;
+    background-color: white;
+    width: 45%;
+    padding: 10px;
+left: 50%;
+transform: translateX(-50%);
+    border-radius: 10px;
+}
+.Address{
+    margin-top: 30px;
+    margin-left: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.Address h1{
+    font-size:2.5rem ;
+}
+.questions{
+    margin: 30px auto;
+}
+.question{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.question h4:hover{
+cursor: pointer;
+color: blueviolet;
+}
+.answer{
+    margin: 10px;
+    padding:5px ;
+    font-size: 14px;
+    opacity: 0.4;
+}
+.d-none{
+    display: none;
+}
+img{
+    cursor: pointer;
+}
+@media  screen and (max-width: 992px)  {
+    .FQA  {
+    
+    width: 90%;
+    }
+}
